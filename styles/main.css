@@ -414,6 +414,24 @@ width: 179%;
   opacity: 0.1;
 }
 
+.donate-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 29%;
+  position: absolute;
+  margin-left: 4%;
+  cursor: pointer;
+}
+
+.donate-container > a {
+  width: 133%;
+  margin: 1px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  opacity: 0.1;
+}
+
 .details-container {
   margin-top: 30%;
   position: absolute;
@@ -449,6 +467,11 @@ width: 179%;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+  color: #fff;
+  /* opacity: -0.9; */
+}
+.saja-container > div.test a {
+  color: #fff;
   opacity: -0.9;
 }
 
