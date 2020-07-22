@@ -1,4 +1,3 @@
-console.log('sjhbksjdb');
 var bg = document.querySelector('.item-bg');
 var items = document.querySelectorAll('.news__item');
 var item = document.querySelector('.news__item');
@@ -121,4 +120,21 @@ swiper.on('slideChangeTransitionEnd', function () {
     bg.style.width = width + 'px';
     bg.style.height = height + 'px';
     bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+});
+
+$(document).ready(function(){
+  $("div.bgimage-container a").on('click', function(event) {
+      console.log('dsfdf');
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
 });

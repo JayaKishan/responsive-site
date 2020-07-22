@@ -6,11 +6,16 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+body {
+  scroll-behavior: smooth;
+}
 .bg-main {
-  color: #fff;
-  /* background-image: url("../images/banner.png"); */
+  /* color: #fff; */
+  width: 100%;
+  height: 800px;
+  background-image: url("../images/bgimage.png");
   /* height: 600px; */
-  padding: 50px;
+  /* padding: 50px; */
 }
 .title {
   display: inline;
@@ -212,6 +217,13 @@ width: 179%;
   opacity: 1;
   pointer-events: auto;
 }
+.news-slider__item.swiper-slide-active {
+  width: 38%;
+  color: red;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
 .news-slider__ctr {
   position: relative;
   z-index: 12;
@@ -382,4 +394,130 @@ width: 179%;
   border-radius: 10px;
   height: 100%;
   width: 100%;
+}
+
+.bgimage-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 46%;
+  position: absolute;
+  margin-left: 0%;
+  cursor: pointer;
+}
+
+.bgimage-container > a {
+  width: 133%;
+  margin: 1px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  opacity: 0.1;
+}
+
+.details-container {
+  margin-top: 30%;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.details-container > a {
+  width: 100%;
+  margin: 1px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  opacity: -0.9;
+}
+
+.saja-container {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  margin-left: 5%;
+  width: 55%;
+  margin-left: 37%;
+}
+
+.saja-container > div {
+  width: 100%;
+  margin: 1px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  opacity: -0.9;
+}
+
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  opacity: -0.9;
+  width: 70px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+.issue-container {
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.issue-container > div {
+  width: 70%;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 1px 2px 0px 6px #f1f1f1;
+  border-radius: 4px;
+}
+.issue-details {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  flex-direction: column;
+
+}
+
+.issue-details > div {
+  width: 100%;
+  margin: 1px;
+  text-align: left;
+  padding: 3px;
+
 }
