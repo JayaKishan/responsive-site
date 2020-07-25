@@ -13,7 +13,7 @@ body {
   /* color: #fff; */
   width: 100%;
   height: 800px;
-  background-image: url("../images/bgimage.png");
+  background-image: url("../images/journal1.jpg");
   /* height: 600px; */
   /* padding: 50px; */
 }
@@ -124,7 +124,13 @@ width: 179%;
   background-color: #fff;
 }
 .footer {
-  background-color: black;
+  background-color: #090909;
+  color: #fff;
+}
+footer {
+  font-size: 20px;
+  /* text-align: center; */
+  padding: 2%;
 }
 @media only screen and (max-width:800px) {
   /* For tablets: */
@@ -399,9 +405,9 @@ width: 179%;
 .bgimage-container {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 46%;
+  margin-top: 33%;
   position: absolute;
-  margin-left: 0%;
+  margin-left: 11%;
   cursor: pointer;
 }
 
@@ -410,8 +416,9 @@ width: 179%;
   margin: 1px;
   text-align: center;
   line-height: 75px;
-  font-size: 30px;
-  opacity: 0.1;
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .donate-container {
@@ -433,22 +440,35 @@ width: 179%;
 }
 
 .details-container {
-  margin-top: 30%;
+  margin-top: 26%;
   position: absolute;
   display: flex;
   flex-wrap: nowrap;
   cursor: pointer;
-  margin-left: 5%;
+  margin-left: 11%;
   width: 90%;
 }
 
 .details-container > a {
   width: 100%;
   margin: 1px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  opacity: -0.9;
+  text-align: left;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+}
+.matter {
+  position: absolute;
+  margin-top: 10%;
+  font-size: 65px;
+  color: #fff;
+  margin-left: 11%;
+  line-height: 1rem;
+}
+.matter p:nth-child(2) {
+  border-right: 3px solid #fff;
+    height: 50px;
+    margin: 0px 0px 4px 5px;
 }
 
 .saja-container {
@@ -466,13 +486,11 @@ width: 179%;
   margin: 1px;
   text-align: center;
   line-height: 75px;
-  font-size: 30px;
+  font-size: 16px;
   color: #fff;
-  /* opacity: -0.9; */
 }
 .saja-container > div.test a {
   color: #fff;
-  opacity: -0.9;
 }
 
 .dropbtn {
@@ -481,8 +499,8 @@ width: 179%;
   font-size: 16px;
   border: none;
   cursor: pointer;
-  opacity: -0.9;
   width: 70px;
+  background-color: Transparent;
 }
 
 .dropdown {
@@ -494,8 +512,9 @@ width: 179%;
   display: none;
   position: absolute;
   width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
+  background-color: #fff;
 }
 
 .dropdown-content a {
@@ -505,14 +524,14 @@ width: 179%;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #a89a91}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  /* background-color: #3e8e41; */
 }
 
 
@@ -543,4 +562,53 @@ width: 179%;
   text-align: left;
   padding: 3px;
 
+}
+
+.joinUs {
+  background-color: #e20d0d;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 120px;
+  outline:none;
+}
+
+.sajalogo {
+    margin-left: 120px;
+}
+
+.saja-contacts {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 344px;
+}
+
+.saja-contacts > div {
+  background-color: #090909;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+}
+.visit {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.visit > div {
+  background-color: #090909;
+  width: 73%;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.8rem;
+  font-size: 20px;
+  text-align: left;
 }
